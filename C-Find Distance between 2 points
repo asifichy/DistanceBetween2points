@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    float x1,y1,x2,y2, totalDistance;
+
+    printf("Enter 1st integer inputs: ");
+    scanf("%f", &x1);
+    printf("Enter 2nd integer inputs: ");
+    scanf("%f", &y1);
+    printf("Enter 3rd integer inputs: ");
+    scanf("%f", &x2);
+    printf("Enter 4th integer inputs: ");
+    scanf("%f", &y2);
+
+
+    totalDistance = ((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1));
+
+    printf("Distance between the points: %.2f\n", sqrt(totalDistance));
+
+    return 0;
+}
